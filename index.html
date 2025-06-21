@@ -15,6 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./CSS/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./CSS/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./CSS/main.css" />
 
@@ -952,81 +954,134 @@
           <a class="button article__button" href="#">SIGN UP</a>
         </section>
 
-        <section class="reviews">
-          <!-- сделать слайдером через owl couresele -->
-          <div class="content reviews__content">
-            <div class="reviews__header">
-              <h2 class="title reviews__title">
-                WHAT OTHER PLAYERS HAVE TO SAY
-              </h2>
-              <div class="reviews-header__buttons">
-                <button
-                  class="button reviews-header__button"
-                  type="button"
-                ></button>
-                <button
-                  class="button reviews-header__button right"
-                  type="button"
-                ></button>
-              </div>
+        <section class="content reviews">
+          <div class="reviews__header">
+            <h2 class="title reviews__title">WHAT OTHER PLAYERS HAVE TO SAY</h2>
+            <div class="reviews-header__buttons">
+              <button
+                class="button reviews-header__button reviews-header__button-prev"
+                type="button"
+              >
+                <img src="./img//png/arrow_left.png" alt="" title="" />
+              </button>
+              <button
+                class="button reviews-header__button reviews-header__button-next"
+                type="button"
+              >
+                <img src="./img//png/arrow_right.png" alt="" title="" />
+              </button>
             </div>
-            <ul class="list reviews__list">
-              <li>
-                <div class="image">
-                  <img
-                    class="reviews-item__image"
-                    src="./img/players/joshua.png"
-                    alt=""
-                    title=""
-                  />
-                </div>
-                <div class="reviews-item__data">
-                  <div class="reviews-item__header">
-                    <span class="reviews-item__name"> JOSHUA </span>
-                    <div class="reviews-item__rating">
-                      <div class="image">
-                        <img src="./img/png/Star2.png" alt="" title="" />
-                      </div>
-
-                      <span>4.5</span>
-                    </div>
-                  </div>
-
-                  <p class="text reviews-item__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Consequat egestas eget.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="image">
-                  <img
-                    class="reviews-item__image"
-                    src="./img/players/mark.png"
-                    alt=""
-                    title=""
-                  />
-                </div>
-                <div class="reviews-item__data">
-                  <div class="reviews-item__header">
-                    <span class="reviews-item__name"> MARK </span>
-                    <div class="reviews-item__rating">
-                      <div class="image">
-                        <img src="./img/png/Star2.png" alt="" title="" />
-                      </div>
-
-                      <span>4.5</span>
-                    </div>
-                  </div>
-
-                  <p class="text reviews-item__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Consequat egestas eget.
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
+          <ul class="reviews__list owl-carousel owl-theme">
+            <li class="items">
+              <div class="image">
+                <img
+                  class="reviews-item__image"
+                  src="./img/players/joshua.png"
+                  alt=""
+                  title=""
+                />
+              </div>
+              <div class="reviews-item__data">
+                <div class="reviews-item__header">
+                  <span class="reviews-item__name"> JOSHUA </span>
+                  <div class="reviews-item__rating">
+                    <div class="image">
+                      <img src="./img/png/Star2.png" alt="" title="" />
+                    </div>
+
+                    <span>4.5</span>
+                  </div>
+                </div>
+
+                <p class="text reviews-item__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat egestas eget.
+                </p>
+              </div>
+            </li>
+            <li class="items">
+              <div class="image">
+                <img
+                  class="reviews-item__image"
+                  src="./img/players/mark.png"
+                  alt=""
+                  title=""
+                />
+              </div>
+              <div class="reviews-item__data">
+                <div class="reviews-item__header">
+                  <span class="reviews-item__name"> MARK </span>
+                  <div class="reviews-item__rating">
+                    <div class="image">
+                      <img src="./img/png/Star2.png" alt="" title="" />
+                    </div>
+
+                    <span>4.5</span>
+                  </div>
+                </div>
+
+                <p class="text reviews-item__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat egestas eget.
+                </p>
+              </div>
+            </li>
+            <li class="items">
+              <div class="image">
+                <img
+                  class="reviews-item__image"
+                  src="./img/players/duck.png"
+                  alt=""
+                  title=""
+                />
+              </div>
+              <div class="reviews-item__data">
+                <div class="reviews-item__header">
+                  <span class="reviews-item__name"> DUCK</span>
+                  <div class="reviews-item__rating">
+                    <div class="image">
+                      <img src="./img/png/Star2.png" alt="" title="" />
+                    </div>
+
+                    <span>4.5</span>
+                  </div>
+                </div>
+
+                <p class="text reviews-item__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat egestas eget.
+                </p>
+              </div>
+            </li>
+            <li class="items">
+              <div class="image">
+                <img
+                  class="reviews-item__image"
+                  src="./img/players/mask.png"
+                  alt=""
+                  title=""
+                />
+              </div>
+              <div class="reviews-item__data">
+                <div class="reviews-item__header">
+                  <span class="reviews-item__name"> MASK </span>
+                  <div class="reviews-item__rating">
+                    <div class="image">
+                      <img src="./img/png/Star2.png" alt="" title="" />
+                    </div>
+
+                    <span>4.5</span>
+                  </div>
+                </div>
+
+                <p class="text reviews-item__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consequat egestas eget.
+                </p>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <section class="content support">
@@ -1205,42 +1260,43 @@
             </li>
           </ul>
         </section>
-        <footer class="footer">
-          <div class="content footer__content">
-            <div class="footer__description">
-              <div class="article">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Consequat egestas eget purus, in dapibus imperdiet quis eget.
-                  Curabitur semper volutpat cras elementum. Eget ultrices donec
-                  urna tellus duis ullamcorper consequat. Enim nunc neque
-                  tristique adipiscing varius sit tristique. Sit parturient eget
-                  pharetra, suspendisse. Turpis ut odio lorem sapien congue.
-                  Pulvinar id in mollis faucibus ut. Magna in neque tristi
-                </p>
-              </div>
-
-              <div class="image footer-description__image">
-                <img src="./img/png/18+.png" alt="" title="" />
-              </div>
+        <footer class="content footer">
+          <div class="footer__description">
+            <div class="article">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Consequat egestas eget purus, in dapibus imperdiet quis eget.
+                Curabitur semper volutpat cras elementum. Eget ultrices donec
+                urna tellus duis ullamcorper consequat. Enim nunc neque
+                tristique adipiscing varius sit tristique. Sit parturient eget
+                pharetra, suspendisse. Turpis ut odio lorem sapien congue.
+                Pulvinar id in mollis faucibus ut. Magna in neque tristi
+              </p>
             </div>
-            <p class="footer__copyright">
-              Gambling can be addictive. Play responsibly.
-            </p>
-            <div class="footer__logos">
-              <a class="logo small footer__logo" href="#"
-                ><div class="image">
-                  <img src="./img/logo/medium-logo.png" alt="" title="" /></div
-              ></a>
 
-              <a class="logo large footer__logo" href="#"
-                ><div class="image">
-                  <img src="./img/logo/large-logo.png" alt="" title="" /></div
-              ></a>
+            <div class="image footer-description__image">
+              <img src="./img/png/18+.png" alt="" title="" />
             </div>
+          </div>
+          <p class="footer__copyright">
+            Gambling can be addictive. Play responsibly.
+          </p>
+          <div class="footer__logos">
+            <a class="logo small footer__logo" href="#"
+              ><div class="image">
+                <img src="./img/logo/medium-logo.png" alt="" title="" /></div
+            ></a>
+
+            <a class="logo large footer__logo" href="#"
+              ><div class="image">
+                <img src="./img/logo/large-logo.png" alt="" title="" /></div
+            ></a>
           </div>
         </footer>
       </div>
     </main>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
