@@ -8,16 +8,20 @@ const burgerList = document.querySelector('[data-name="burger-list"]');
 openOpenCloseBtn.addEventListener("click", openBurger);
 document.addEventListener("click", closeSidebar);
 
+
+
 function openBurger() {
   burger.classList.toggle("transform");
   openOpenCloseBtn.classList.toggle("close");
-  sidebar.setAttribute("style", "transform: translateX(110%);");
 }
 
 openSidebarBtn.addEventListener("click", openSidebar);
 
 function openSidebar() {
-  sidebar.setAttribute("style", "transform: translateX(-18%);");
+  
+  sidebar.classList.remove("fixed")
+  sidebar.classList.remove("sidebar__close")
+  sidebar.classList.add("sidebar__open")
 }
 
 function closeSidebar(e) {
@@ -31,7 +35,13 @@ function closeSidebar(e) {
     openOpenCloseBtn.classList.add("close")
   }
 
+  if(sidebar.classList.contains("fixed")){
+    return
+  }
+
   if (e.target !== openSidebarBtn && e.target !== openSidebarImg) {
-    sidebar.setAttribute("style", "transform: translateX(110%);");
+    sidebar.classList.remove("sidebar__open")
+    sidebar.classList.add("sidebar__close")
+    sidebar.classList.add("fixed")
   }
 }

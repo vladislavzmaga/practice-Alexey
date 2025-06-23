@@ -248,6 +248,11 @@ p {
   margin-left: 20px;
 }
 
+.fixed{
+  position: relative;
+  transform: translateX(0);
+}
+
 .sidebar__content {
   padding: 0;
   background-color: transparent;
