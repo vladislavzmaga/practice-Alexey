@@ -19,8 +19,8 @@ body {
   line-height: var(--main-text-lineHeight);
   padding: 0;
   margin: 0;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   background: radial-gradient(
     rgba(255, 255, 255, 1),
     rgba(0, 185, 222, 1),
@@ -63,18 +63,18 @@ p {
   overflow: hidden;
 }
 
-@media (min-with: 1240px) {
-  .content {
-    background-color: red;
-  }
-}
-
 .main {
   display: flex;
   flex-direction: row-reverse;
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
+}
+
+.main > div:last-child{
+  max-width: 925px;
+  min-width: 230px;
+  width: auto;
 }
 
 .logo:hover {
@@ -110,6 +110,11 @@ p {
   cursor: pointer;
   scale: 1.1;
 }
+
+
+.transform {
+  transform: translateX(110%);
+}
 /* ///////header/////// */
 
 .header {
@@ -118,18 +123,13 @@ p {
 
 .header__content {
   max-width: 1240px;
+  width: auto;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
   padding: 12px 0;
   background-color: inherit;
   overflow: visible;
-}
-
-@media (max-width: 1240px) {
-  .header {
-    background-color: red;
-  }
 }
 
 .header__logo {
@@ -215,6 +215,31 @@ p {
 .green {
   background-color: #0fa810;
 }
+
+.burger__button {
+  display: none;
+}
+
+
+
+.burger {
+  display: none;
+}
+
+.burger .menu{
+  display: none;
+}
+ .burger .language{
+  display: none;
+ }
+
+ .burger .header__button-signup{
+  display: none;
+ }
+
+ .burger .header__button-login{
+  display: none;
+ }
 
 /* /////sidebar////// */
 
@@ -403,6 +428,10 @@ p {
   color: #fcfcfc;
 }
 
+.sidebar__switch{
+  display: none;
+}
+
 /* ////////app//////// */
 
 .app {
@@ -468,6 +497,11 @@ p {
   margin-bottom: 35px;
 }
 
+.hero__rating > img{
+  max-width: 24px;
+  max-height: 23px;
+}
+
 .hero__rating > span {
   margin-right: 8px;
   font-weight: 600;
@@ -525,7 +559,7 @@ p {
   position: absolute;
   top: 0px;
   content: "";
-  width: 98px;
+  width: 100%;
   height: 8px;
   background-color: green;
   border-radius: 6px;
@@ -709,42 +743,6 @@ p {
   max-height: 28px;
 }
 
-/* .facts__list li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  border-bottom: 1px solid #77777780;
-}
-
-.facts__list li:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.facts-item__option {
-  display: flex;
-  align-items: center;
-}
-
-.facts-item__option .image {
-  margin-right: 8px;
-}
-
-.facts-option__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.facts-item__value {
-  width: 587px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-} */
 
 /* ///////article///// */
 .article h3 {
@@ -888,8 +886,7 @@ p {
 }
 
 .reviews__list {
-  max-width: 925px;
-  width: 100%;
+  max-width: max-content;
   display: flex;
   align-items: center;
 }
@@ -911,6 +908,11 @@ p {
 .reviews__list li > .image {
   min-width: 109px;
   margin-right: 31px;
+}
+
+.reviews__list li > .image img {
+  max-width: 109px;
+  max-height: 113px;
 }
 
 .reviews-item__header {
@@ -957,12 +959,11 @@ p {
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 648px;
 }
 
 .support > .image {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
 }
 
@@ -1064,56 +1065,9 @@ p {
   max-height: 24px;
 }
 
-/* .support__list{
-  position: relative;
-}
 
-.support__list li {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #191919;
-}
 
-.support__list li:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.support-item__option {
-  display: flex;
-  align-items: center;
-  width: 252px;
-  margin-right: 26px;
-  font-family: var(--main-text-weight);
-  font-size: var(--main-text-size);
-  line-height: var(--main-text-lineHeight);
-  color: var(--main-text-color);
-}
-
-.support-item__option .image {
-  width: 24px;
-  height: 24px;
-  margin-right: 16px;
-}
-
-.support-item__value {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #2e9344;
-  text-decoration: none;
-}
-
-.support-item__value:hover {
-  scale: 1.1;
-}
-
-.bold {
-  font-weight: 600;
-} */
-
-/* /////fac////// */
+/* /////faq////// */
 
 .faq__title {
   font-size: 48px;
